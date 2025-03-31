@@ -1,3 +1,6 @@
+# Diagrama de Red Empresarial
+
+```mermaid
 flowchart TD
     %% Definición de estilos
     classDef router fill:#ff9900,stroke:#333,stroke-width:2px,color:black;
@@ -15,7 +18,7 @@ flowchart TD
     
     %% INTERNET Y CONEXIÓN PRINCIPAL
     subgraph EXTERNAL["ZONA EXTERNA"]
-        INTERNET[("<img src='/api/placeholder/40/40' width='40' height='40' style='border-radius: 50%;' /><br>Internet")] 
+        INTERNET[("Internet")]
         ISP[("ISP<br>Proveedor de Servicios")]
         INTERNET --- ISP
     end
@@ -222,3 +225,4 @@ flowchart TD
     class OF1,OF2,OF3,RED_PRINCIPAL,SERVIDORES,CORE,PERIMETER,EXTERNAL network;
     class VLAN_OF1_1,VLAN_OF1_2,VLAN_OF1_3,VLAN_OF1_ADM,VLAN_OF1_WIFI,VLAN_OF2_1,VLAN_OF2_2,VLAN_OF2_3,VLAN_OF2_ADM,VLAN_OF2_WIFI,VLAN_OF3_1,VLAN_OF3_2,VLAN_OF3_3,VLAN_OF3_ADM,VLAN_OF3_WIFI,SERV_VLAN1,SERV_VLAN2 vlan;
     class MONITORING,BACKUP,SRV_ZONE zone;
+```
